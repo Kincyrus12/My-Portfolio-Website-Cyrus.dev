@@ -6,6 +6,7 @@
   align-items: center;
   gap: 1rem;
   margin-top: 2rem;
+  width: auto;
 }
 
 .hero__img {
@@ -14,9 +15,9 @@
   height: 6rem;
 }
 
-.hero__title {
+.hero__subtitle {
   color: var(--clr-slate400);
-  font-size: 3rem;
+  font-size: 1rem;
   line-height: 0.9;
 }
 
@@ -25,12 +26,9 @@
   letter-spacing: -0.05em;
   line-height: 0.9;
   font-size: 1.2rem;
-  width: 100%;
 }
 
 .hero__description {
-  width: 100%;
-  padding:0 2px ;
   font-size: var(--size-sm);
   color: var(--clr-slate600);
   text-align: center;
