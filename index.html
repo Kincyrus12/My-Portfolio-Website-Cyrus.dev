@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="description" content="My Portfolio website" />
+    <meta name="keywords" content="web design, html, css, js" />
+    <title>Portfolio Website</title>
+  </head>
+  <body>
+    <header class="header container">
+      <div class="logo">
+        <img class="image-logo" src="public/image-slide-1.jpg" alt="">
+        CYRUS.<span style="color: red;">dev</span></div>
+      <nav>
+        <ul class="header__menu">
+          <li>
+            <a class="header__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="header__link" href="#featured">Projects</a>
+          </li>
+          <li>
+            <a class="header__link" href="#contact">Contact</a>
+          </li>
+          <li class="header__line"></li>
+          <li>
+            <button
+              aria-label="theme-toggle btn"
+              id="theme-toggle"
+              class="header__sun"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a class="header__resume btn" href="public/My Resume123.pdf" download="">Resume</a>
+          </li>
+        </ul>
+        <button aria-label="mobile nav button" class="header__bars">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <!------------------- Mobile Navigation ---------------->
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li>
+            <a class="mobile-nav__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#featured">Work</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#contact">Contact</a>
+          </li>
+          <li class="mobile-nav__link-line"></li>
+          <li>
+            <button
+              aria-label="theme-toggle btn"
+              id="theme-toggle"
+              class="mobile-nav__sun"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+              <path
+              d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+            />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a class="mobile-nav__btn btn" href="#">Resume</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!---------------- End of Mobile Navigation ------------------->
+    <main>
+      <section class="hero container">
+        <img class="hero__img" src="public/cy-3.jpg" alt="Profile picture" />
+        <h2 class="hero__subtitle">Hi, I'm Cyrus 👋</h2>
+        <h2 class="hero__title">
+          A FRONT-END <br />
+          SOFTWARE ENGINEER.
+        </h2>
+        <p class="hero__description">
+          A passionate <strong>Frontend Software Engineer</strong>  and <strong>Warehouse Management System (WMS) Analysts</strong>
+          with a proven
+            ability to collaborate effectively with
+            senior developers while spending
+            extra time to be mentored. Enjoy
+            working closely with team members
+            to ensure workloads are effectively
+            redirected to bottlenecks and
+            personally picking up the slack when
+            necessary. Ready to apply my passion for
+            coding to a talented engineering
+            team to develop quality solutions.
+        </p>
+        <a class="hero__btn btn" href="#contact">Reach out To Me</a>
+      </section>
+
+      <!-- -------------About starts here----------------- -->
+      <section id="about" class="about container section">
+        <div class="about__content">
+          <h2 class="about__title">About</h2>
+          <p class="about__description">
+            Hello there! I'm Cyrus, a
+            <strong>Frontend Software Engineer</strong> based
+            in Texas. Over the years, I've had the privilege of contributing to a diverse range of projects, collaborating closely with designers and backend teams to transform concepts into polished code. I specialize in optimizing performance, utilizing techniques such as code splitting and caching to ensure fast and responsive applications.
+          </p>
+          <p class="about__description">
+            What sets me apart is my commitment to continuous growth. I thrive on staying up-to-date with the ever-evolving landscape of web technologies, always seeking innovative solutions to challenges. My problem-solving mindset, attention to detail, and ability to work collaboratively make me an asset in any team. I take immense pride in my ability to transform ideas into intuitive and visually stunning interfaces, and I look forward to leveraging my skills and passion to create impactful digital solutions.
+          </p>
+          <p class="about__description">
+            I'm excited about the ever-evolving world of frontend development, and I actively engage in staying current with emerging technologies and trends. My journey is characterized by a problem-solving mindset, a penchant for innovation, and an unwavering passion for crafting digital experiences that leave a lasting impact. Let's collaborate and bring exceptional ideas to life through innovative frontend solutions!
+          </p>
+          <p class="about__description">
+            I recently created a Personal Website called
+            <a href="https://cyrus-dev-12.netlify.app/">Cyrus.dev</a> where you can find learning materials for programming and take courses that will enhance your present and future programming.
+          </p>
+          <hr class="about__hr" />
+          <h3 class="about__subtitle">Technologies</h3>
+          <div class="about__ul-container">
+            <ul class="about__ul">
+              <li class="about__list">JavaScript </li>
+              <li class="about__list">CSS</li>
+              <li class="about__list">HTML</li>
+            </ul>
+            <ul class="about__ul">
+              <li class="about__list">ReactJS</li>
+              <li class="about__list">NextJS</li>
+              <li class="about__list">TailwindCSS</li>
+            </ul>
+          </div>
+        </div>
+        <div class="about__img-wrapper">
+          <img src="public/12-1024x1024.png" alt="">
+        </div>
+      </section>
+
+      <section class="hero container">
+        <h3 class="featured__subtitle-h3">Education</h3>
+        <div class="featured__info-container">
+          <div>
+            <h3 class="featured__label">University Of Phoenix</h3>
+            <h4 style="color: rgb(3, 207, 3);">Software Developer</h4>
+            <ul class="featured__tech-stack">
+              <h3 class="featured__subtitle">courses</h3>
+              <li class="featured__info">Software Development Concepts</li>
+              <li class="featured__info">Intro to Software Engineering</li>
+              <li class="featured__info">Software Architecture</li>
+              <li class="featured__info">.NET I</li>
+              <li class="featured__info">Cloud Programming</li>
+              <li class="featured__info">Project Management in Software Development</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="featured__label">KevtechSolutions</h3>
+            <h4 style="color: rgb(3, 207, 3);">Computer Science</h4>
+            <ul class="featured__tech-stack">
+              <h3 class="featured__subtitle">courses</h3>
+              <li class="featured__info">Web Development</li>
+              <li class="featured__info">Introduction to Computer Science</li>
+              <li class="featured__info">Operating Systems</li>
+              <li class="featured__info">Human-Computer Interaction (HCI)</li>
+              <li class="featured__info">Software Development Tools</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="featured__label">Naikuru High School</h3>
+            <h4 style="color: rgb(3, 207, 3);">High School Diploma</h4>
+            <ul class="featured__tech-stack">
+              <h3 class="featured__subtitle">Major Focus</h3>
+              
+              <li class="featured__info">Physics</li>
+              <li class="featured__info">Geograhpy</li>
+              <li class="featured__info">Biology</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ----------------------featured project starts here ---------------------- -->
+      <section id="featured" class="featured container section">
+        <h3 class="featured__subtitle">Featured project</h3>
+        <div class="featured__wrapper">
+          <h2 class="featured__title">
+            <a  href="https://64fa239e7bf4e3441a5239b9--cyrus-dev-12.netlify.app/">CYRUS.dev</a>
+          </h2>
+          
+        </div>
+        <p class="featured__description">
+          My team and I created a stunning website using JavaScript and Tailwind CSS, known for its sleek design and efficient development process. Leveraging Tailwind's utility-first approach, we crafted a visually appealing and responsive site that loads quickly and looks fantastic on all devices. The project exemplifies Tailwind's flexibility, allowing for easy customization and scalability, making it a top choice for modern web development.
+        </p>
+        <div class="featured__info-container">
+          <div>
+            <h3 class="featured__label">Tech stack</h3>
+            <ul class="featured__tech-stack">
+              <li class="featured__info">TailwindCSS</li>
+              <li class="featured__info">JavaScript</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="featured__label">Project type</h3>
+            <p class="featured__info">Fullstack</p>
+          </div>
+          <div>
+            <h3 class="featured__label">Timeline</h3>
+            <p class="featured__info">2022-2023</p>
+          </div>
+        </div>
+        <div class="featured__img-container">
+          <div class="featured__img-wrapper">
+            <a href="https://64fa239e7bf4e3441a5239b9--cyrus-dev-12.netlify.app/ ">
+              <img src="public/my website screenshort.jpeg"/>
+            </a>
+             
+          </div>
+        </div>
+        <br>
+        <a class="btn work__project-btn" href="https://cyrus-dev-12.netlify.app/">Visit Site</a>
+      </section>
+
+      <!-- -------------Work starts here----------------- -->
+      <section class="work container section">
+        <h2 class="work__title">Projects</h2>
+        <p class="work__description">
+          Here is some of the projects have managed to build;
+        </p>
+        <div class="work__container">
+          <!-- Project 1 -->
+          <h3 class="work__project-title">React Mui</h3>
+          <div class="work__img-wrapper work__image1">
+            <img
+              src="public/Web capture_31-8-2023_22120_react-mui-project-cyrus.netlify.app.jpeg"
+            />
+          </div>
+          <div class="work__project work__content1">
+            <h3 class="work__project-subtitle">React MUI project</h3>
+            <p class="work__project-description1">
+              I recently developed a dynamic task management application using React and the Material-UI (MUI) API. By combining the power of React and MUI, the project resulted in a polished task management application that offered an exceptional user experience. The MUI API not only expedited the development process but also ensured a consistent and visually appealing design throughout the application.
+            </p>
+            <p class="work__project-description2">
+            </p>
+            <a class="btn work__project-btn" href="https://react-mui-project-cyrus.netlify.app">Visit Site</a>
+          </div>
+          <!-- Project 2 -->
+          <h3 class="work__project-title">Linkedin Project</h3>
+          <div class="work__img-wrapper work__image2">
+            <img
+              src="public/project-1.jpeg"
+            />
+          </div>
+          <div class="work__project work__content2">
+            <h3 class="work__project-subtitle">Linkedin Project</h3>
+            <p class="work__project-description1">
+              This is a linkedin clone project that i build using HTML, CSS and some JavaScript. It is very responsive and functional at some point. The whole project was created by me and happy that it worked out!
+            </p>
+            <p class="work__project-description2">
+            </p>
+            <a class="btn work__project-btn" href="https://linkedlnclone-cyrusdev.netlify.app">Visit Site</a>
+          </div>
+          <!-- Project 3 -->
+          <h3 class="work__project-title">Admin Dashboard</h3>
+          <div class="work__img-wrapper work__image3">
+            <img
+              src="public/project-2.jpeg"
+            />
+          </div>
+          <div class="work__project work__content3">
+            <h3 class="work__project-subtitle">Admin Dashboard</h3>
+            <p class="work__project-description1">
+              This is an Admin Dashboard project that i build using HTML and CSS. It is very responsive . The whole project was created by me and happy that it worked out!
+            </p>
+            <p class="work__project-description2">
+            </p>
+            <a class="btn work__project-btn" href="https://admin-dashboard-cyrus-dev.netlify.app">Visit Site</a>
+          </div>
+          <!-- Project 4 -->
+          <h3 class="work__project-title">E-commerce project</h3>
+          <div class="work__img-wrapper work__image4">
+            <img
+              src="public/project-4.jpeg"
+            />
+          </div>
+          <div class="work__project work__content4">
+            <h3 class="work__project-subtitle">E-commerce project</h3>
+            <p class="work__project-description1">
+              This is an e-commerce website project that i build using HTML and CSS and some JavaScript. It is very responsive . The whole project was created by me and happy that it worked out!
+            </p>
+            <p class="work__project-description2">
+            </p>
+            <a class="btn work__project-btn" href="https://jpshop-ecommerce.netlify.app">Visit Site</a>
+          </div>
+          <!-- Project 5 -->
+          <h3 class="work__project-title">My Resume</h3>
+          <div class="work__img-wrapper work__image5">
+            <img
+              src="public/project-5.jpeg"
+            />
+          </div>
+          <div class="work__project work__content5">
+            <h3 class="work__project-subtitle">My Resume</h3>
+            <p class="work__project-description1">
+              This is my personal Resume project that i build using HTML and CSS. It is very responsive . The whole project was created by me and happy that it worked out!
+            </p>
+            <p class="work__project-description2">
+            </p>
+            <a class="btn work__project-btn" href="https://cyrus-resume.netlify.app">Visit Site</a>
+          </div>
+          <!-- Project 6 -->
+          <h3 class="work__project-title">My Portfolio</h3>
+          <div class="work__img-wrapper work__image6">
+            <img
+              src="public/project-6.jpeg"
+            />
+          </div>
+          <div class="work__project work__content6">
+            <h3 class="work__project-subtitle">My Portfolio</h3>
+            <p class="work__project-description1">
+              This is my personal Portfolio project that i build using HTML, CSS and JavaScript. It is very responsive . The whole project was created by me and happy that it worked out!
+            </p>
+            <p class="work__project-description2">
+            </p>
+            <a class="btn work__project-btn" href="https://myportfolio-cyrus-yegon.netlify.app">Visit Site</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- -------------Contqct starts here----------------- -->
+      <section id="contact" class="contact container section">
+        <h2 class="contact__title">Contact Me</h2>
+        <p class="contact__description">
+          Whether you are starting a project, have business inquiries or just
+          want to say hi, my inbox is always open so feel free to reach out and
+          I will get back to you as soon as possible.
+        </p>
+        <a
+          class="contact__btn btn"
+          href="mailto:yegonkcyrus12@gmail.com"
+          target="_blank"
+          >Contact Me<Menu></Menu></a
+        >
+      </section>
+    </main>
+    <footer class="footer container section">
+      <h3 class="footer__title"> Cyrus.dev <br>copy right by CYRUS.dev</h3>
+    </footer>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
