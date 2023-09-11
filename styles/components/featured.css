@@ -37,6 +37,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  margin-left: 2rem;
 }
 
 .featured__info-container div {
@@ -97,6 +98,9 @@
   .featured__title {
     font-size: var(--size-3xl);
   }
+  .featured__info-container {
+    margin-left: 2rem;
+  }
 
   .featured__link {
     width: var(--size-3xl);
@@ -127,6 +131,7 @@
   .featured__img-container {
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   }
+ 
 }
 
 /* md */

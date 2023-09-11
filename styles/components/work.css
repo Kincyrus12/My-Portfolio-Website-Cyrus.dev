@@ -47,6 +47,7 @@
   font-size: var(--size-sm);
   color: var(--clr-slate600);
   margin: 1rem 0;
+  
 }
 
 .work__project-description2 {
@@ -108,6 +109,10 @@
       'content6 image6';
     place-items: center;
   }
+  .work__img-wrapper{
+    margin-bottom: 5rem;
+
+  }
 
   .work__image1 {
     grid-area: image1;
@@ -158,7 +163,7 @@
   }
 
   .work__project {
-    padding: 0 1rem;
+    padding: 0px 1rem;
   }
 
   .work__project-title {

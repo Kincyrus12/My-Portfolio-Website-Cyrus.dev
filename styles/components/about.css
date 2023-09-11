@@ -13,6 +13,8 @@
 .about__title {
   font-size: var(--size-2xl);
   color: var(--clr-light);
+  display: flex;
+  justify-content: center;
 }
 
 .about__description {
@@ -28,6 +30,8 @@
 .about__subtitle {
   font-size: var(--size-sm);
   color: var(--clr-slate400);
+  display: flex;
+  justify-content: center;
 }
 
 .about__ul-container {

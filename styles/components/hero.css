@@ -31,6 +31,7 @@
   max-width: 60ch;
   font-size: var(--size-sm);
   color: var(--clr-slate600);
+  text-align: left;
 }
 
 .hero__btn {
@@ -89,10 +90,11 @@
 
   .hero__description {
     font-size: var(--size-lg);
+
   }
 
   .hero__btn {
-    font-size: var(--size-lg);
+    font-size:var(--size-sm);
   }
 }
 
