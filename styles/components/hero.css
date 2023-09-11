@@ -24,14 +24,14 @@
   color: var(--clr-slate600);
   letter-spacing: -0.05em;
   line-height: 0.9;
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 .hero__description {
-  max-width: 60ch;
+  max-width: 98%;
   font-size: var(--size-sm);
   color: var(--clr-slate600);
-  text-align: left;
+  text-align: center;
 }
 
 .hero__btn {
