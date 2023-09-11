@@ -25,11 +25,11 @@
   letter-spacing: -0.05em;
   line-height: 0.9;
   font-size: 1.2rem;
-  max-width: 100%;
+  width: 100%;
 }
 
 .hero__description {
-  max-width: 100%;
+  width: 100%;
   padding:0 2px ;
   font-size: var(--size-sm);
   color: var(--clr-slate600);
@@ -65,7 +65,7 @@
   }
 
   .hero__btn {
-    font-size: var(--size-base);
+    font-size: 1rem;
   }
 }
 
