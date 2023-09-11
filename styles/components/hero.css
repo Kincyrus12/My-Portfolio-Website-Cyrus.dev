@@ -6,7 +6,7 @@
   align-items: center;
   gap: 1rem;
   margin-top: 2rem;
-  width: auto;
+  width: 100%;
 }
 
 .hero__img {
@@ -51,11 +51,12 @@
   }
 
   .hero__subtitle {
+    font-size: 1rem;
     font-size: var(--size-lg);
   }
 
   .hero__title{
-    font-size: var(--size-4xl);
+    font-size: 2rem;
   }
 
   .hero__description {
